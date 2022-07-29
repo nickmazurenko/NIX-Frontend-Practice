@@ -7,8 +7,8 @@
 
 <h3> Chronos </h3>
 
-![The example](/Screenshots/Chronos.png "Chronos Website")
+![The example](/Task_2/Screenshots/Chronos.png "Chronos Website")
 
 <h3> My version </h3>
 
-![My version of Chronos website](/Screenshots/MyVersion.png "My version")
+![My version of Chronos website](/Task_2/Screenshots/MyVersion.png "My version")
