@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/board.css" />
+    <link rel="stylesheet" href="./styles/pinboard.css" />
+
+    <title>Chronos</title>
+  </head>
+  <body>
+    <header>
+      <div id="company-logo">
+        <img id="company-icon" src="./icons/logo.png" alt="logo" />
+        <a id="company-name" href="/">Chronos</a>
+      </div>
+
+      <div id="header-options">
+        <a class="header-option">Pinboard</a>
+        <a class="header-option">Calendar</a>
+        <a class="header-option">Friends</a>
+        <div class="dropdown">
+          <a class="header-option">Messages</a>
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <img src="./icons/avatar.png" alt="avatar" />
+              <span>Jacob Hubertus</span> <br />
+              <small>Are you coming to the Roadtrip?</small>
+            </div>
+            <div class="dropdown-item">
+              <img src="./icons/avatar.png" alt="avatar" />
+              <span>Jesamine Larsson</span> <br />
+              <small>This Pinboard idea in Cronos is neat.</small>
+            </div>
+            <div class="dropdown-item">
+              <img src="./icons/avatar.png" alt="avatar" />
+              <span>Trent Walton</span> <br />
+              <small></small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="account-info">
+        <img src="./icons/avatar.png" alt="avatar" />
+        <button id="account-add"><i class="fas fa-plus"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <div id="board">
+        <div id="board-likes">
+          <a
+            href="#"
+            title="Like it"
+            class="like like-counter multiple-count"
+            data-count="100"
+            ><span>&#x2764;</span></a
+          >
+        </div>
+
+        <div id="board-info">
+          <h3 id="board-title">Roadtrip on Highway One</h3>
+          <small id="board-date">26 january - 1 February</small>
+          <div id="board-featured">
+            <a href="#">Featured</a>
+            <ul>
+              <li><small>Blog Post</small></li>
+              <li><small>Event</small></li>
+              <li><small>Photo</small></li>
+              <li><small>Music</small></li>
+              <li><small>Video</small></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="board-people">
+          <img class="board-avatar" src="./icons/avatar.png" alt="avatar" />
+          <img class="board-avatar" src="./icons/avatar.png" alt="avatar" />
+          <img class="board-avatar" src="./icons/avatar.png" alt="avatar" />
+          <a class="board-button">Yes</a>
+          <a class="board-button">No</a>
+        </div>
+      </div>
+
+      <div id="pinboard">
+        <div id="pinboard-header">
+          <h3>Your Pinboard</h3>
+          <small>Sort By</small>
+          <span style="color: red">&#9675;</span>
+          <span style="color: orange">&#9675;</span>
+          <span style="color: blue">&#9675;</span>
+          <span style="color: green">&#9675;</span>
+        </div>
+        <div id="pinboard-pins">
+          <div class="pin">
+            <img
+              class="pinboard-image"
+              alt="pin-image"
+              src="./icons/pin3.png"
+            />
+            <a
+              href="#"
+              title="Like it"
+              class="like like-counter multiple-count"
+              data-count="1000"
+            >
+              <span>&#x2764;</span>
+            </a>
+            <a href="#"></a>
+            <span class="pinboard-text"></span>
+            <div class="board-people">
+              <img class="board-avatar" src="./icons/avatar.png" alt="avatar" />
+            </div>
+          </div>
+
+          <div class="pin">
+            <img
+              class="pinboard-image"
+              alt="pin-image"
+              src="./icons/pin1.png"
+            />
+
+            <a
+              href="#"
+              title="Like it"
+              class="like like-counter multiple-count"
+              data-count="120"
+            >
+              <span>&#x2764;</span>
+            </a>
+
+            <a href="#"></a>
+
+            <span class="pinboard-text">
+              This pinboard is filled with cool events, photos and media. I love
+              it.
+            </span>
+          </div>
+
+          <div class="pin">
+            <img
+              class="pinboard-image"
+              alt="pin-image"
+              src="./icons/pin2.png"
+            />
+            <a
+              href="#"
+              title="Like it"
+              class="like like-counter multiple-count"
+              data-count="90"
+            >
+              <span>&#x2764;</span>
+            </a>
+
+            <a href="#"></a>
+
+            <span class="pinboard-text">
+              Company retreat in Deer Valley, Utah
+            </span>
+
+            <div class="board-people">
+              <img class="board-avatar" src="./icons/avatar.png" alt="avatar" />
+              <img class="board-avatar" src="./icons/avatar.png" alt="avatar" />
+              <img class="board-avatar" src="./icons/avatar.png" alt="avatar" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

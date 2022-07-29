@@ -1,0 +1,83 @@
+#board {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 50px;
+  left: 0;
+  background-image: url(../icons/board.png);
+  background-size: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20% 50% 30%;
+}
+
+.board-people img {
+  width: 20px;
+  border-radius: 100%;
+}
+
+.board-people {
+  margin: 0 0 20px 40px;
+  place-self: end start;
+}
+
+#board-info {
+  font-size: 1.5em;
+  place-self: start;
+  margin: 40px;
+}
+
+.board-button {
+  vertical-align: top;
+  border-left: 1px solid rgba(255, 255, 255, 0.322);
+  padding: 0 10px 0 10px;
+  color: rgba(255, 255, 255, 0.667);
+}
+
+.board-button:hover {
+  cursor: pointer;
+  color: white;
+  filter: drop-shadow(0px 2px 2px white);
+}
+
+.like {
+  display: inline-block;
+  margin: 40px;
+  position: relative;
+  font-size: 1em;
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.654);
+}
+
+.like-counter {
+  margin-right: 39px;
+}
+
+.like-counter:after {
+  margin: 2px 0 0 10px;
+  color: rgba(255, 255, 255, 0.441);
+  content: attr(data-count);
+}
+
+#board-featured {
+  text-align: end;
+  font-size: 0.8em;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  color: rgba(255, 255, 255, 0.379);
+}
+
+#board-featured a {
+  color: rgba(255, 255, 255, 0.354);
+}
+
+#board-featured ul {
+  list-style: none;
+}
+
+#board-featured li:hover {
+  color: white;
+
+}

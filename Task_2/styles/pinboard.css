@@ -1,0 +1,71 @@
+#pinboard {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 550px;
+}
+
+#pinboard-header {
+  height: 50px;
+  background-color: rgba(241, 241, 241, 0.616);
+  display: grid;
+  grid-template-columns: 60% 30% repeat(4, 2%);
+}
+
+#pinboard-header small {
+  place-self: center end;
+}
+
+#pinboard-header h3 {
+  margin-left: 40px;
+  place-self: center start;
+}
+
+#pinboard-header span {
+  font-size: larger;
+  place-self: center;
+}
+
+#pinboard-pins {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.pin {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+  text-align:left;
+}
+
+.pin .like {
+  position: absolute;
+  top: 50px;
+  color: red;
+}
+
+.pin .board-people {
+  position: absolute;
+  bottom: 0px;
+}
+
+.pinboard-text {
+  position: relative;
+  color: white;
+  top: -200px;
+  left: 20px;
+  font-size: 1.5em;
+}
+
+.pinboard-image {
+  margin-top: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(0.5px)
+    drop-shadow(0 5px 10px rgba(0, 0, 0, 0.457)) brightness(0.3);
+}
