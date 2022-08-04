@@ -25,5 +25,3 @@ class circleArray {
     }
   }
 }
-
-export default circleArray;
