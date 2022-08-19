@@ -62,19 +62,26 @@
 		/*
 		**	Функция показывает меню с указанным ID
 		*/
+		var timer;
+		var timedObj;
 		function showMenu(objID){
 			var obj = document.getElementById(objID);
 			obj.style.visibility = "visible";
+
+			if(objID === timedObj) {
+				clearTimeout(timer);
+			}
 		}
 		/*
 		**	Функция убирает меню с указанным ID
 		*/
 		function hideMenu(objID){
 			var obj = document.getElementById(objID);
-			setTimeout(
-				() => obj.style.visibility = "", 2000
+			timer = window.setTimeout(
+				() => obj.style.visibility = "", 1000
 			);
-		}		
+			timedObj = objID;
+		}			
 	</script>
 </head>
 
