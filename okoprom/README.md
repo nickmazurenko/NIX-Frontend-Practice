@@ -2,7 +2,7 @@
 
 <p>Term paper for NIX-FE practice</p>
 <h2>Demo</h2>
-<a href="" target="_blank"> </a>
+<a href="https://nickmazurenko.github.io/okoprom/" target="_blank">nickmazurenko.github.io/okoprom</a>
 
 <h2>General Information</h2>
 
